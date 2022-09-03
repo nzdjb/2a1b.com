@@ -52,4 +52,6 @@ body {
   font-size: 12px;
   grid-area: snowman;
   align-self: center;
+  text-decoration: none;
+  color: black;
 }

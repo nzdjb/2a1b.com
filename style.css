@@ -1,0 +1,55 @@
+body {
+  background-color: #ccc;
+  display: grid;
+  margin: 0px;
+  height: 100vh;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  grid-template-columns: auto 150px 600px auto 12px;
+  grid-template-rows: 100px auto 20px;
+  grid-template-areas:
+    "left header header right ."
+    "left menu content right ."
+    "left menu content right snowman"
+}
+
+#header {
+  grid-area: header;
+  margin: 10px;
+}
+
+#header h1 {
+  margin-bottom: 0;
+}
+
+#links {
+  grid-area: menu;
+  margin: 10px;
+}
+
+#links h2 {
+  font-size: large;
+}
+
+#links ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+#content {
+  grid-area: content;
+  margin: 10px
+}
+
+.article {
+  margin: 5px;
+}
+
+.article h2 {
+  font-size: large;
+}
+
+#snowman {
+  font-size: 12px;
+  grid-area: snowman;
+  align-self: center;
+}

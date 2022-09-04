@@ -1,0 +1,28 @@
+name: ci
+on: push
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: mkdir output
+      - run: cp src/* output
+      - uses: actions/upload-artifact@v3
+        with:
+          name: built
+          path: dist
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    needs:
+      - build
+    steps:
+      - uses: aws-actions/configure-aws-credentials@v1
+        with:
+          role-to-assume: {{ secrets.DEPLOY_ROLE }}
+      - uses: actions/download-artifact@v3
+        with:
+          name: built
+      - run: aws s3 sync dist/ s3://{{ secrets.DEPLOY_BUCKET }}

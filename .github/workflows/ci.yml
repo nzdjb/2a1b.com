@@ -6,8 +6,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: mkdir output
-      - run: cp src/* output
+      - run: mkdir dist
+      - run: cp src/* dist
       - uses: actions/upload-artifact@v3
         with:
           name: built

@@ -1,7 +1,7 @@
 body {
   background-color: #ccc;
   display: grid;
-  margin: 0px;
+  margin: 0;
   height: 100vh;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   grid-template-columns: auto 150px 600px auto 12px;
@@ -12,30 +12,31 @@ body {
     "left menu content right snowman"
 }
 
-#header {
+header {
   grid-area: header;
   margin: 10px;
 }
 
-#header h1 {
+header .title {
   margin-bottom: 0;
 }
 
-#links {
+.links {
   grid-area: menu;
   margin: 10px;
 }
 
-#links h2 {
+.links .title {
   font-size: large;
+  font-weight: 600;
 }
 
-#links ul {
+.links ul {
   list-style-type: none;
-  padding-left: 0px;
+  padding-left: 0;
 }
 
-#content {
+.content {
   grid-area: content;
   margin: 10px
 }
@@ -44,11 +45,11 @@ body {
   margin: 5px;
 }
 
-.article h2 {
+.article .title {
   font-size: large;
 }
 
-#snowman {
+.snowman {
   font-size: 12px;
   grid-area: snowman;
   align-self: center;

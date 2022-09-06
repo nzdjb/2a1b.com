@@ -22,7 +22,7 @@ jobs:
       - uses: aws-actions/configure-aws-credentials@v1
         with:
           role-to-assume: ${{ secrets.DEPLOY_ROLE }}
-          aws-region: us-east-1
+          aws-region: ${{ secrets.DEPLOY_REGION }}
       - uses: actions/download-artifact@v3
         with:
           name: built

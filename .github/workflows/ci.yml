@@ -26,8 +26,8 @@ jobs:
         with:
           role-to-assume: ${{ secrets.DEPLOY_ROLE }}
           aws-region: ${{ secrets.DEPLOY_REGION }}
-      - run: find .
       - uses: actions/download-artifact@v3
         with:
           name: built
+      - run: find .
       - run: aws s3 sync dist/ s3://${{ secrets.DEPLOY_BUCKET }}

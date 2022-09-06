@@ -29,5 +29,5 @@ jobs:
       - uses: actions/download-artifact@v3
         with:
           name: built
-      - run: find .
+          path: dist
       - run: aws s3 sync dist/ s3://${{ secrets.DEPLOY_BUCKET }}

@@ -7,9 +7,9 @@ body {
   grid-template-columns: auto 150px 600px auto 12px;
   grid-template-rows: 100px auto 20px;
   grid-template-areas:
-    "left header header right ."
-    "left menu content right ."
-    "left menu content right snowman"
+    ". header header right ."
+    ". about content right ."
+    ". . content right snowman"
 }
 
 header {
@@ -21,17 +21,17 @@ header .title {
   margin-bottom: 0;
 }
 
-.links {
-  grid-area: menu;
+.about {
+  grid-area: about;
   margin: 10px;
 }
 
-.links .title {
+.about .heading {
   font-size: large;
   font-weight: 600;
 }
 
-.links ul {
+.about ul {
   list-style-type: none;
   padding-left: 0;
 }

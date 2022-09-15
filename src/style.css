@@ -45,8 +45,15 @@ header .title {
   margin: 5px;
 }
 
-.article .title {
-  font-size: large;
+.article .heading {
+  font-size: x-large;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.article .subheading {
+  font-size: small;
+  margin-top: 0;
 }
 
 .snowman {

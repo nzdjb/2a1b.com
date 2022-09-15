@@ -4,7 +4,7 @@ body {
   margin: 0;
   height: 100vh;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  grid-template-columns: auto 150px 600px auto 12px;
+  grid-template-columns: auto 200px 600px auto 12px;
   grid-template-rows: 100px auto 20px;
   grid-template-areas:
     ". header header right ."

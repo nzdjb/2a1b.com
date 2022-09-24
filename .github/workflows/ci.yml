@@ -1,13 +1,28 @@
 name: ci
 on: push
 jobs:
-  build:
-    name: Build
+  build-html:
+    name: Build HTML
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - run: mkdir dist
-      - run: cp src/* dist
+      - run: |
+          cd src/renderer
+          yarn install
+          yarn build
+          yarn exec node build/index.js
+      - uses: actions/upload-artifact@v3
+        with:
+          name: built
+          path: dist
+  build-style:
+    name: Build Style
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: mkdir dist
+      - run: cp src/style.css dist
       - uses: actions/upload-artifact@v3
         with:
           name: built
@@ -20,7 +35,8 @@ jobs:
       id-token: write
     if: github.ref == 'refs/heads/main'
     needs:
-      - build
+      - build-html
+      - build-style
     steps:
       - uses: aws-actions/configure-aws-credentials@v1
         with:

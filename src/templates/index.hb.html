@@ -23,11 +23,13 @@
 </div>
 <div class="content">
   <div class="articles">
+    {{#each articles}}
     <div class="article">
-      <p class="heading">In which I write a thing.</p>
-      <p class="subheading">Dave @ 2022-09-15</p>
-      <p>This is a placeholder article whilst I work out the layout and think of something worth writing about.</p>
+      <p class="heading">{{this.title}}</p>
+      <p class="subheading">{{this.author}} @ {{this.date}}</p>
+      {{this.content}}
     </div>
+    {{/each}}
   </div>
 </div>
 <a href="#" class="snowman">&#x2603;</a>

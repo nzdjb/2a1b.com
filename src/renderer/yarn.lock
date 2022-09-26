@@ -7,6 +7,11 @@
   resolved "https://registry.yarnpkg.com/@iarna/toml/-/toml-2.2.5.tgz#b32366c89b43c6f8cefbdefac778b9c828e3ba8c"
   integrity sha512-trnsAYxU3xnS1gPHPyU961coFyLkh4gAD/0zQ5mymY4yOZ+CYvsPqUbOFSw0aDM4y0tV7tiFxL/1XfXPNC6IPg==
 
+"@types/marked@^4.0.7":
+  version "4.0.7"
+  resolved "https://registry.yarnpkg.com/@types/marked/-/marked-4.0.7.tgz#400a76809fd08c2bbd9e25f3be06ea38c8e0a1d3"
+  integrity sha512-eEAhnz21CwvKVW+YvRvcTuFKNU9CV1qH+opcgVK3pIMI6YZzDm6gc8o2vHjldFk6MGKt5pueSB7IOpvpx5Qekw==
+
 "@types/node@^18.7.19":
   version "18.7.19"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-18.7.19.tgz#ad83aa9b7af470fab7e0f562be87e97dc8ffe08e"
@@ -23,6 +28,11 @@ handlebars@^4.7.7:
     wordwrap "^1.0.0"
   optionalDependencies:
     uglify-js "^3.1.4"
+
+marked@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/marked/-/marked-4.1.0.tgz#3fc6e7485f21c1ca5d6ec4a39de820e146954796"
+  integrity sha512-+Z6KDjSPa6/723PQYyc1axYZpYYpDnECDaU6hkaf5gqBieBkMKYReL5hteF2QizhlMbgbo8umXl/clZ67+GlsA==
 
 minimist@^1.2.5:
   version "1.2.6"

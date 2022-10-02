@@ -34,10 +34,19 @@ class Article {
   }
 }
 
-const config = readdirSync('../articles').map(file => readFileSync(`../articles/${file}`).toString()).join('\n');
-const articles = (toml.parse(config)['articles'] as unknown as ArticleConfig[]).map(article => new Article(article));
-articles.sort((a: Article, b: Article) => a.compareDate(b));
-articles.reverse();
-const index = readFileSync('../templates/index.hb.html').toString();
-const output = Handlebars.compile(index)({ articles });
-writeFileSync('../../dist/index.html', output);
+function getArticles(): Article[] {
+  const config = readdirSync('../articles').map(file => readFileSync(`../articles/${file}`).toString()).join('\n');
+  return (toml.parse(config)['articles'] as unknown as ArticleConfig[]).map(article => new Article(article));
+}
+
+function renderIndex(articles: Article[]): void {
+  articles.sort((a: Article, b: Article) => a.compareDate(b));
+  articles.reverse();
+  const index = readFileSync('../templates/index.hb.html').toString();
+  const output = Handlebars.compile(index)({ articles });
+  writeFileSync('../../dist/index.html', output);
+}
+
+const articles = getArticles();
+renderIndex(articles);
+

@@ -39,7 +39,7 @@ class Article {
 
 function getArticles(): Article[] {
   const config = readdirSync('../articles').map(file => readFileSync(`../articles/${file}`).toString()).join('\n');
-  return (toml.parse(config)['articles'] as unknown as ArticleConfig[]).map(article => new Article(article));
+  return (toml.parse(config)['articles'] as unknown as ArticleConfig[]).filter(article => article.published).map(article => new Article(article));
 }
 
 function renderIndex(articles: Article[]): void {

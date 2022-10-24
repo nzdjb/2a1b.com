@@ -5,7 +5,7 @@ jobs:
     name: Build HTML
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - run: mkdir dist
       - run: |
           cd src/renderer
@@ -20,7 +20,7 @@ jobs:
     name: Build Style
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - run: mkdir dist
       - run: cp src/style.css dist
       - uses: actions/upload-artifact@v3

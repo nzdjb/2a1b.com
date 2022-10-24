@@ -3,3 +3,4 @@ title = 'Another great article.'
 author = 'Dave'
 date = 2022-09-24
 content = 'A little bit of shorter one.'
+published = false

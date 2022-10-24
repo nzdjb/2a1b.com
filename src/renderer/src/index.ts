@@ -14,6 +14,7 @@ interface ArticleConfig {
   author?: string;
   date: Date;
   content: string;
+  published?: boolean;
 }
 
 class Article {
@@ -21,12 +22,14 @@ class Article {
   readonly content: string;
   readonly author: string;
   readonly date: string;
+  readonly published: boolean;
 
   constructor(input: ArticleConfig) {
     this.title = input.title;
     this.author = input.author!;
     this.date = input.date.toISOString().split('T')[0];
     this.content = sanitizeHTML(marked.parse(input.content), sanitizerSettings);
+    this.published = input.published ?? true;
   }
 
   compareDate(other: Article) {

@@ -2,6 +2,7 @@
 title = 'In which I write a thing.'
 author = 'Dave'
 date = 2022-09-15
+published = false
 content = '''
 This is a placeholder article whilst I work out the layout and think of something worth writing about.
 '''

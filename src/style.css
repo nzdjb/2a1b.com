@@ -21,6 +21,11 @@ header .title {
   margin-bottom: 0;
 }
 
+header .title a {
+  color: #000;
+  text-decoration: none;
+}
+
 .about {
   grid-area: about;
   margin: 10px;

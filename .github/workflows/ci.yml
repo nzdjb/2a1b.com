@@ -8,10 +8,8 @@ jobs:
       - uses: actions/checkout@v3
       - run: mkdir dist
       - run: |
-          cd src/renderer
           yarn install
-          yarn build
-          yarn exec node build/index.js
+          yarn exec -- static-site-generator --outFile dist/index.html
       - uses: actions/upload-artifact@v3
         with:
           name: built
@@ -22,7 +20,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: mkdir dist
-      - run: cp src/style.css dist
+      - run: cp static/style.css dist
       - uses: actions/upload-artifact@v3
         with:
           name: built

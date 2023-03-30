@@ -1,0 +1,12 @@
+{
+  "name": "@nzdjb/2a1b.com",
+  "version": "0.0.0",
+  "description": "Configuration for my personal website.",
+  "repository": "https://github.com/nzdjb/2a1b.com.git",
+  "author": "nzdjb <github@2a1b.com>",
+  "license": "UNLICENSED",
+  "private": true,
+  "devDependencies": {
+    "@nzdjb/static-site-generator": "*"
+  }
+}

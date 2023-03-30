@@ -1,38 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<title>2a1b</title>
-<link rel="icon" href="data:,">
-<link rel="stylesheet" href="style.css">
+  <title>2a1b</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<header>
-  <h1 class="title"><a href="/">2a1b</a></h1>
-  Dave Ball / nzdjb (he/him)
-</header>
-<div class="about">
-  <p class="heading">About me</p>
-  <p>He's just this guy, you know?</p>
-  <p class="heading">Me elsewhere</p>
-<ul>
-  <li><a rel="me" href="https://mastodon.nz/@nzdjb">Mastodon</a></li>
-  <li><a rel="me" href="https://twitter.com/nzdjb">Twitter</a></li>
-  <li><a rel="me" href="https://github.com/nzdjb">Github</a></li>
-  <li><a rel="me" href="https://linkedin.com/in/dave-ball">LinkedIn</a></li>
-  <li><a rel="me" href="https://ko-fi.com/nzdjb">Ko-Fi</a></li>
-</ul>
-</div>
-<div class="content">
-  <div class="articles">
-    {{#each articles}}
-    <div class="article">
-      <p class="heading">{{this.title}}</p>
-      <p class="subheading">{{this.author}} @ {{this.date}}</p>
-      {{{this.content}}}
-    </div>
-    {{/each}}
+  <header>
+    <h1 class="title"><a href="/">2a1b</a></h1>
+    Dave Ball / nzdjb (he/him)
+  </header>
+  <div class="about">
+    <p class="heading">About me</p>
+    <p>Husband, Dad, Computer Wrangler in Te Whanganui-a-Tara, Aotearoa.</p>
+    <p class="heading">Me elsewhere</p>
+    <ul>
+      <li><a rel="me" href="https://mastodon.nz/@nzdjb">Mastodon</a></li>
+      <li><a rel="me" href="https://twitter.com/nzdjb">Twitter</a></li>
+      <li><a rel="me" href="https://github.com/nzdjb">Github</a></li>
+      <li><a rel="me" href="https://linkedin.com/in/dave-ball">LinkedIn</a></li>
+      <li><a rel="me" href="https://ko-fi.com/nzdjb">Ko-Fi</a></li>
+    </ul>
   </div>
-</div>
-<a href="#" class="snowman">&#x2603;</a>
+  <div class="content">
+    <div class="articles">
+      {{#each articles}}
+      <div class="article">
+        <p class="heading">{{this.title}}</p>
+        <p class="subheading">{{this.author}} @ {{this.date}}</p>
+        {{{this.content}}}
+      </div>
+      {{/each}}
+    </div>
+  </div>
+  <a href="#" class="snowman">&#x2603;</a>
 </body>
+
 </html>

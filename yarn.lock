@@ -16,9 +16,9 @@
     uuid "^7.0.3"
 
 "@nzdjb/static-site-generator@*":
-  version "0.4.2"
-  resolved "https://registry.yarnpkg.com/@nzdjb/static-site-generator/-/static-site-generator-0.4.2.tgz#abc789250348c9f86db318182a47f69f329f42f5"
-  integrity sha512-vqylY3DODqdrnSHu0yWqdkXZKJKEDBmytsA0GquwcmRzNbefdrBZKIA+1WiYv7A0VJ9N43Bxma5wGv5uhBSfRQ==
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/@nzdjb/static-site-generator/-/static-site-generator-0.5.0.tgz#9c33300d0e9b8519ad6ecc4164c3a22b532f1f27"
+  integrity sha512-JeuTKAVyrCT1of+wo8/rX+8095fovqbLuNvs5vinwp0rdWq7y6fPPrrh+T52YmhMjCzEmAUkxO9omRZJaV9CkQ==
   dependencies:
     "@iarna/toml" "^2.2.5"
     handlebars "^4.7.7"

@@ -20,14 +20,14 @@
     wrap-ansi-cjs "npm:wrap-ansi@^7.0.0"
 
 "@nzdjb/static-site-generator@*":
-  version "0.5.1"
-  resolved "https://registry.yarnpkg.com/@nzdjb/static-site-generator/-/static-site-generator-0.5.1.tgz#62699f044770d40654539f80410e472235eadda5"
-  integrity sha512-29T0RFBBlPTiyLUGBlP8Dm0SOJ/GtupyVyb42v/Xh2YRj4x7FeDIH+aVi4lC6XgLoiMofRem0+0RpKt8NmEVfw==
+  version "0.5.3"
+  resolved "https://registry.yarnpkg.com/@nzdjb/static-site-generator/-/static-site-generator-0.5.3.tgz#7708af7e8d8a9642076c48d251685567ff30e0b3"
+  integrity sha512-Mn8wyhqD5En628zFNJ7Wz9ZT5ZljqQc4Gqwa3f5EvKTf9UVoxbyUZpGHS1L2tyKbHi5Ca7as/3F/qDZ8/Ho/nw==
   dependencies:
     "@iarna/toml" "^2.2.5"
     glob "^10.2.7"
     handlebars "^4.7.7"
-    marked "^5.0.0"
+    marked "^9.0.0"
     sanitize-html "^2.10.0"
     ts-command-line-args "^2.4.2"
 
@@ -319,10 +319,10 @@ lru-cache@^9.1.1:
   resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-9.1.2.tgz#255fdbc14b75589d6d0e73644ca167a8db506835"
   integrity sha512-ERJq3FOzJTxBbFjZ7iDs+NiK4VI9Wz+RdrrAB8dio1oV+YvdPzUEE4QNiT2VD51DkIbCYRUUzCRkssXCHqSnKQ==
 
-marked@^5.0.0:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/marked/-/marked-5.1.0.tgz#cf51f03ba04dfb3469774029fd0106d258658767"
-  integrity sha512-z3/nBe7aTI8JDszlYLk7dDVNpngjw0o1ZJtrA9kIfkkHcIF+xH7mO23aISl4WxP83elU+MFROgahqdpd05lMEQ==
+marked@^9.0.0:
+  version "9.0.3"
+  resolved "https://registry.yarnpkg.com/marked/-/marked-9.0.3.tgz#95be5e8cba93f2c2ca1d6503794c4f02d81c97d9"
+  integrity sha512-pI/k4nzBG1PEq1J3XFEHxVvjicfjl8rgaMaqclouGSMPhk7Q3Ejb2ZRxx/ZQOcQ1909HzVoWCFYq6oLgtL4BpQ==
 
 minimatch@^9.0.1:
   version "9.0.1"
@@ -433,6 +433,7 @@ string-format@^2.0.0:
   integrity sha512-bbEs3scLeYNXLecRRuk6uJxdXUSj6le/8rNPHChIJTn2V79aXVTR1EH2OH5zLKKoz0V02fOUKZZcw01pLUShZA==
 
 "string-width-cjs@npm:string-width@^4.2.0", string-width@^4.1.0:
+  name string-width-cjs
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/string-width/-/string-width-4.2.3.tgz#269c7117d27b05ad2e536830a8ec895ef9c6d010"
   integrity sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==
@@ -451,6 +452,7 @@ string-width@^5.0.1, string-width@^5.1.2:
     strip-ansi "^7.0.1"
 
 "strip-ansi-cjs@npm:strip-ansi@^6.0.1", strip-ansi@^6.0.0, strip-ansi@^6.0.1:
+  name strip-ansi-cjs
   version "6.0.1"
   resolved "https://registry.yarnpkg.com/strip-ansi/-/strip-ansi-6.0.1.tgz#9e26c63d30f53443e9489495b2105d37b67a85d9"
   integrity sha512-Y38VPSHcqkFrCpFnQ9vuSXmquuv5oXOKpGeT6aGrr3o3Gc9AlVa6JBfUSOCnbxGGZF+/0ooI7KrPuUSztUdU5A==

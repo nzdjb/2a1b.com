@@ -12,7 +12,7 @@ jobs:
           yarn exec -- static-site-generator --outFile dist/index.html
       - uses: actions/upload-artifact@v3
         with:
-          name: built
+          name: html
           path: dist
   build-style:
     name: Build Style
@@ -23,7 +23,7 @@ jobs:
       - run: cp static/style.css dist
       - uses: actions/upload-artifact@v3
         with:
-          name: built
+          name: style
           path: dist
   deploy:
     name: Deploy
@@ -42,7 +42,6 @@ jobs:
           aws-region: ${{ secrets.DEPLOY_REGION }}
       - uses: actions/download-artifact@v4
         with:
-          name: built
           path: dist
       - run: aws s3 sync dist/ s3://${{ secrets.DEPLOY_BUCKET }}
       - run: aws cloudfront create-invalidation --distribution-id ${{ secrets.DEPLOY_DISTRIBUTION }} --paths '/*'

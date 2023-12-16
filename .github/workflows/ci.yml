@@ -10,7 +10,7 @@ jobs:
       - run: |
           yarn install
           yarn exec -- static-site-generator --outFile dist/index.html
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: html
           path: dist
@@ -21,7 +21,7 @@ jobs:
       - uses: actions/checkout@v4
       - run: mkdir dist
       - run: cp static/style.css dist
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: style
           path: dist

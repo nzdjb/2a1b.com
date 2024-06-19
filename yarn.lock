@@ -20,15 +20,15 @@
     wrap-ansi-cjs "npm:wrap-ansi@^7.0.0"
 
 "@nzdjb/static-site-generator@*":
-  version "0.7.2"
-  resolved "https://registry.yarnpkg.com/@nzdjb/static-site-generator/-/static-site-generator-0.7.2.tgz#8052bd5c2c28de6061a768578f523115734ac2bb"
-  integrity sha512-iIEDCIaR4b+jalmlc2IMrhNvgXivbDcr8Qj3+zoon+XvKG1SoQbF2f9B1MdDHKYWbAdOieDwTGWOKo+3XLfIhA==
+  version "0.7.3"
+  resolved "https://registry.yarnpkg.com/@nzdjb/static-site-generator/-/static-site-generator-0.7.3.tgz#b7e35feb6d1f10e734a2757e805d097368eea30e"
+  integrity sha512-DuQ5tN8lzk3Im2h/H07EyC8cCZsJMfw4/WVF+52rauMXpAHTVGPOhZLSmPaaqtiDyW3DsLQGl4+LzZA4pjPWPg==
   dependencies:
     "@iarna/toml" "^2.2.5"
     es-main "^1.3.0"
     glob "^10.2.7"
     handlebars "^4.7.7"
-    marked "^12.0.0"
+    marked "^13.0.0"
     sanitize-html "^2.10.0"
     ts-command-line-args "^2.4.2"
 
@@ -325,10 +325,10 @@ lru-cache@^9.1.1:
   resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-9.1.2.tgz#255fdbc14b75589d6d0e73644ca167a8db506835"
   integrity sha512-ERJq3FOzJTxBbFjZ7iDs+NiK4VI9Wz+RdrrAB8dio1oV+YvdPzUEE4QNiT2VD51DkIbCYRUUzCRkssXCHqSnKQ==
 
-marked@^12.0.0:
-  version "12.0.0"
-  resolved "https://registry.yarnpkg.com/marked/-/marked-12.0.0.tgz#051ea8c8c7f65148a63003df1499515a2c6de716"
-  integrity sha512-Vkwtq9rLqXryZnWaQc86+FHLC6tr/fycMfYAhiOIXkrNmeGAyhSxjqu0Rs1i0bBqw5u0S7+lV9fdH2ZSVaoa0w==
+marked@^13.0.0:
+  version "13.0.0"
+  resolved "https://registry.yarnpkg.com/marked/-/marked-13.0.0.tgz#c18cda8a1fd0055859060c971e30f57beb79fd46"
+  integrity sha512-VTeDCd9txf4KLLljUZ0nljE/Incb9SrWuueE44QVuU0pkOdh4sfCeW1Z6lPcxyDRSVY6rm8db/0OPaN75RNUmw==
 
 minimatch@^9.0.1:
   version "9.0.1"

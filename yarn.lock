@@ -20,9 +20,9 @@
     wrap-ansi-cjs "npm:wrap-ansi@^7.0.0"
 
 "@nzdjb/static-site-generator@*":
-  version "0.8.5"
-  resolved "https://registry.yarnpkg.com/@nzdjb/static-site-generator/-/static-site-generator-0.8.5.tgz#7a8111ae062128780d5be2a76f3243abd4b62321"
-  integrity sha512-VDezzPc5j7mEwxQb/sJimRb/MbWAYWqSVz250KYr7KNRzZBaqkY3tAwfPSJ2RtzxB6N8bK0UC/RKVJZ9ExxLpQ==
+  version "0.8.6"
+  resolved "https://registry.yarnpkg.com/@nzdjb/static-site-generator/-/static-site-generator-0.8.6.tgz#f2808e6918bc4688ea9ac798ea4af4ab58b7ba13"
+  integrity sha512-YiWsDfFxryoZCteUXWDrgNWv4pN56WF0b6g13zQ+E8OoBPzG9Z2/VYimd4OMLOQfpRaDTfzp+uAHchpb4B4FUw==
   dependencies:
     "@iarna/toml" "^2.2.5"
     es-main "^1.3.0"

@@ -8,5 +8,6 @@
   "private": true,
   "devDependencies": {
     "@nzdjb/static-site-generator": "*"
-  }
+  },
+  "packageManager": "yarn@4.6.0"
 }

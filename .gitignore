@@ -2,3 +2,4 @@
 **/build
 **/dist
 **/yarn-error.log
+**/install-state.gz

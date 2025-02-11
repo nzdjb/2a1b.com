@@ -35,8 +35,8 @@ __metadata:
   linkType: soft
 
 "@nzdjb/static-site-generator@npm:*":
-  version: 0.9.6
-  resolution: "@nzdjb/static-site-generator@npm:0.9.6"
+  version: 0.9.7
+  resolution: "@nzdjb/static-site-generator@npm:0.9.7"
   dependencies:
     "@iarna/toml": "npm:^2.2.5"
     es-main: "npm:^1.3.0"
@@ -47,7 +47,7 @@ __metadata:
     ts-command-line-args: "npm:^2.4.2"
   bin:
     static-site-generator: dist/src/index.js
-  checksum: 10c0/59774d8643a5e6301c0f51d4d73a1c06058fe783f2399245881e45f1813215b8839cc7b2e69e5cd4f55c66df9988d6d5619ee3e541c2e16add90e118dc4ccd0f
+  checksum: 10c0/ff99fa66084774809b0643da7915ce7b4c908e232905c2f87b6d1ecef0453a156cfe2736e3532c016b96b6f7cdb0124b22b2bd2059135e530768162048b03e78
   languageName: node
   linkType: hard
 

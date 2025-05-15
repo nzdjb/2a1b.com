@@ -40,7 +40,7 @@ jobs:
       - build-html
       - build-style
     steps:
-      - uses: aws-actions/configure-aws-credentials@v4.2.0
+      - uses: aws-actions/configure-aws-credentials@v4.2.1
         with:
           role-to-assume: ${{ secrets.DEPLOY_ROLE }}
           aws-region: ${{ secrets.DEPLOY_REGION }}

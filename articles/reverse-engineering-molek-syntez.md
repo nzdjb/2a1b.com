@@ -1,5 +1,3 @@
-# Reverse Engineering MOLEK-SYNTEZ
-
 In this article, I describe the steps I took to reverse engineer the Solitaire portion of MOLEK-SYNTEZ to unlock an achievement more quickly. 
 
 ## What is reverse engineering?

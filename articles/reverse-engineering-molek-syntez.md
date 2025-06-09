@@ -1,4 +1,4 @@
-In this article, I describe the steps I took to reverse engineer the Solitaire portion of MOLEK-SYNTEZ to unlock an achievement more quickly. 
+In this article, I describe the steps I took to reverse engineer the Solitaire portion of [MOLEK-SYNTEZ](https://www.zachtronics.com/molek-syntez/) to unlock an achievement more quickly. 
 
 ## What is reverse engineering?
 
@@ -6,7 +6,7 @@ Reverse engineering is the process of taking a product and observing its behavio
 
 ## The game
 
-MOLEK-SYNTEZ (2019) is a puzzle game developed and published by Zachtronics. In it, you program a molecular synthesizer to transform various precursor molecules into the desired output molecules.
+MOLEK-SYNTEZ (2019) is a puzzle game developed and published by [Zachtronics](https://www.zachtronics.com/). In it, you program a molecular synthesizer to transform various precursor molecules into the desired output molecules.
 
 As with many Zachtronics games, there is also a Solitaire game included. 
 

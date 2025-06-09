@@ -47,5 +47,6 @@ jobs:
       - uses: actions/download-artifact@v4
         with:
           path: dist
+          merge-multiple: true
       - run: aws s3 sync dist/ s3://${{ secrets.DEPLOY_BUCKET }}
       - run: aws cloudfront create-invalidation --distribution-id ${{ secrets.DEPLOY_DISTRIBUTION }} --paths '/*'

@@ -26,6 +26,12 @@ header .title a {
   text-decoration: none;
 }
 
+pre {
+  padding: 0.5em;
+  white-space: pre-wrap;
+  background-color: #ddd;
+}
+
 .about {
   grid-area: about;
   margin: 10px;

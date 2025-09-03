@@ -4,7 +4,7 @@ body {
   margin: 0;
   height: 100vh;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  grid-template-columns: auto 200px 600px auto 12px;
+  grid-template-columns: auto 200px 40% auto 12px;
   grid-template-rows: 100px auto 20px;
   grid-template-areas:
     ". header header right ."
@@ -24,12 +24,6 @@ header .title {
 header .title a {
   color: #000;
   text-decoration: none;
-}
-
-pre {
-  padding: 0.5em;
-  white-space: pre-wrap;
-  background-color: #ddd;
 }
 
 .about {

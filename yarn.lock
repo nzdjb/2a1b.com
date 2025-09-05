@@ -30,24 +30,25 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@nzdjb/2a1b.com@workspace:."
   dependencies:
-    "@nzdjb/static-site-generator": "npm:*"
+    "@nzdjb/static-site-generator": "npm:^0.10.0"
   languageName: unknown
   linkType: soft
 
-"@nzdjb/static-site-generator@npm:*":
-  version: 0.9.19
-  resolution: "@nzdjb/static-site-generator@npm:0.9.19"
+"@nzdjb/static-site-generator@npm:^0.10.0":
+  version: 0.10.0
+  resolution: "@nzdjb/static-site-generator@npm:0.10.0"
   dependencies:
     "@iarna/toml": "npm:^2.2.5"
     es-main: "npm:^1.3.0"
     glob: "npm:^11.0.0"
     handlebars: "npm:^4.7.7"
     marked: "npm:^16.2.1"
+    marked-footnote: "npm:^1.4.0"
     sanitize-html: "npm:^2.10.0"
     ts-command-line-args: "npm:^2.4.2"
   bin:
     static-site-generator: dist/src/index.js
-  checksum: 10c0/8e8ad5870fe1c06feb9cf210bd45f4c99ae64f4a1d370dc48bf3613f51219e1b8c9f7bc80c63cad4c0872510b4d13c7010bcdbb7f625fa1d230ed02beffc3bc0
+  checksum: 10c0/02275cdf0d269e490b2d761f57170e8659ae45a69feef08cbb1b56af9a888327b887c1136d61759f2efccb4ae5cf09dccbd15a266b79b0673f9457a9cef7c6b7
   languageName: node
   linkType: hard
 
@@ -440,6 +441,15 @@ __metadata:
   version: 11.0.0
   resolution: "lru-cache@npm:11.0.0"
   checksum: 10c0/827ff0e0739f9b0f30f92f5a5fc97c6a2bd3ae32c0452bc58cb7411d6c589d49536073027293f2d1f02d0c2e72b63b162f238df7e9ff6f4cc0345f92afec4d1d
+  languageName: node
+  linkType: hard
+
+"marked-footnote@npm:^1.4.0":
+  version: 1.4.0
+  resolution: "marked-footnote@npm:1.4.0"
+  peerDependencies:
+    marked: ">=7.0.0"
+  checksum: 10c0/9feb37756ce923d247d23db09b49b284bd5d7bfb5a2af09f359a6fe3cbe26d836c12b2fce4a48bd3766b0ea71383d3d1e51ebd61931c17c892f0277c2a478eb1
   languageName: node
   linkType: hard
 

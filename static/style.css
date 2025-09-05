@@ -7,7 +7,7 @@ body {
   grid-template-columns: auto 200px 40% auto 12px;
   grid-template-rows: 100px auto 20px;
   grid-template-areas:
-    ". header header right ."
+    ". header content right ."
     ". about content right ."
     ". . content right snowman"
 }

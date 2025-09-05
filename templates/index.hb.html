@@ -32,6 +32,9 @@
         <p class="subheading">{{this.author}} @ {{this.date}}</p>
         {{{this.content}}}
       </div>
+      {{#unless @last}}
+      <hr />
+      {{/unless}}
       {{/each}}
     </div>
   </div>

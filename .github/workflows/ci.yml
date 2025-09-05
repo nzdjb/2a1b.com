@@ -6,10 +6,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
+      - run: corepack enable
       - uses: actions/setup-node@v4
         with:
           node-version: "20.x"
-      - run: corepack enable
       - run: mkdir dist
       - run: |
           yarn install

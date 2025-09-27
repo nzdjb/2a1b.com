@@ -23,9 +23,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
+      - run: mkdir dist
       - run: cp static/style.css dist
       - uses: actions/upload-artifact@v4
-        with:
+        with:q
           name: style
           path: dist
   deploy:

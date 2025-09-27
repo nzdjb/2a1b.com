@@ -49,6 +49,6 @@ jobs:
           merge-multiple: true
         # Remove the html extensions to get nice permalinks for now.
       - run: find dist/article -type f -name '*.html' -exec sh -c 'for file do mv "$file" "${file%.html}"; done' sh {} +
-      - run: aws s3 sync dist/ s3://${{ secrets.DEPLOY_BUCKET }} --exclude 'dist/article'
+      - run: aws s3 sync dist/ s3://${{ secrets.DEPLOY_BUCKET }} --exclude 'dist/article/*'
       - run: aws s3 sync dist/article/ s3://${{ secrets.DEPLOY_BUCKET }} --content-type 'text/html'
       - run: aws cloudfront create-invalidation --distribution-id ${{ secrets.DEPLOY_DISTRIBUTION }} --paths '/*'

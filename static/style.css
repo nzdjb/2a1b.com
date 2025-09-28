@@ -70,10 +70,14 @@ pre {
   margin-top: 0;
 }
 
+a[href^="#footnote-"] {
+  color: #000;
+}
+
 .snowman {
   font-size: 12px;
   grid-area: snowman;
   align-self: center;
   text-decoration: none;
-  color: black;
+  color: #000;
 }

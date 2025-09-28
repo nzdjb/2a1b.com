@@ -29,7 +29,7 @@
     <div class="articles">
       {{#each articles}}
       <div class="article">
-        <p class="heading">{{this.title}}</p>
+        <p class="heading"><a href="/article/{{this.slug}}">{{this.title}}</a></p>
         <p class="subheading">{{this.author}} @ {{this.date}}</p>
         {{{this.content}}}
       </div>

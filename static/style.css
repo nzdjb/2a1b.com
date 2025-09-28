@@ -23,7 +23,6 @@ header .title {
 
 header .title a {
   color: #000;
-  text-decoration: none;
 }
 
 pre {
@@ -60,6 +59,10 @@ pre {
   font-size: xx-large;
   font-weight: 600;
   margin-bottom: 0;
+}
+
+.article .heading a {
+  color: #000;
 }
 
 .article .subheading {

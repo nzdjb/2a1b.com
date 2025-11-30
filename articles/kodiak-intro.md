@@ -31,3 +31,7 @@ The `versions` array also accepts `"major"` as an option, though I personally li
 ## Pricing
 
 Kodiak is free for personal GitHub accounts and public repositories. Organizations can subscribe to use it on private repos.
+
+## Conclusion
+
+Kodiak has personally saved me heaps of time and teams I've been on in the past even more. I'd highly recommend trying it out if it fits your workflow.

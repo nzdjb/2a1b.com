@@ -1,0 +1,5 @@
+[[articles]]
+title = 'Arbitrary Code Exec in Balatro'
+author = 'Dave'
+date = 2025-12-05
+contentFile = 'articles/arbitrary-code-exec-in-balatro.md'

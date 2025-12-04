@@ -79,7 +79,7 @@ This could obviously be replaced with something far nastier, but spawning calcul
 ### Using safe serialization formats
 Don't! Load! Code!
 
-This issue resulted from a mechanism used for loading code being used to load data. Using a format that doesn't represent executable code is a safer approach. JSON, protobuf and XML are popular choices. Even then, it's important to make sure that the deserializer does not have any "helpful" features that can result in code execution.
+This issue resulted from a mechanism used for loading code being used to load data. Using a format that doesn't represent executable code is a safer approach. JSON and protobuf are popular choices. Even then, it's important to make sure that the deserializer does not have any "helpful" features that can result in code execution.
 
 ### Sandboxing
 If you really must load code, ensure it's done in a manner that limits the functionality it has access to.
@@ -96,14 +96,22 @@ This loads the string into a chunk, sets the environment (what functions the fun
 
 ## The result
 
-I had a lot of trouble trying to get hold of someone to acknowledge the bug. The developer never responded and the publisher said they would investigate, but then went silent.
+### Risk
+
+The main risk associated with this issue is that an attacker could turn file write into code execution. This risk is increased if an attacker can convince a user to install a save file they have provided.
 
 ### Mitigations
 
-Don't load save games from untrusted sources until there is a patch for this issue. ¯\\\_(ツ)\_/¯
+* Don't load save games from untrusted sources until there is a patch for this issue.
+* Don't run the game if there's a chance someone else has write access to your Balatro profile folder.
+
+### Vendor contact
+
+I had a lot of trouble trying to get hold of someone to acknowledge the bug. The developer never responded and the publisher said they would investigate, but then went silent.
 
 ### Timeline
 
+* 2025-09-07: Found the issue and determined impact.
 * 2025-09-08: Emailed the developer about the issue.
 * 2025-09-16: Sent follow up email to the developer.
 * 2025-09-19: Sent message to the developer through their contact form.
@@ -112,6 +120,10 @@ Don't load save games from untrusted sources until there is a patch for this iss
 * 2025-10-02: Received response from publisher saying they would log and investigate the issue.
 * 2025-11-13: Emailed publisher for update and stating intention to publish. No response.
 * 2025-12-05: Published this post.
+
+## Further work
+
+Balatro has several other files that are stored in the same place with the same .jkr extension. They are likely also exploitation vectors, but I haven't looked into them.
 
 [^1]: I found out later that the [recommended approach for shipping LÖVE games](https://love2d.org/wiki/Game_Distribution) is to concatenate the framework loader and a zip of the source together, so this is intentional.
 [^2]: One interesting thing about `get_compressed` is that if checks the first 6 bytes of a save file for "return" and skips decompression if there's a match. This made exploit development easier.

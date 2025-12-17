@@ -44,7 +44,7 @@ jobs:
         with:
           role-to-assume: ${{ secrets.DEPLOY_ROLE }}
           aws-region: ${{ secrets.DEPLOY_REGION }}
-      - uses: actions/download-artifact@v6
+      - uses: actions/download-artifact@v7
         with:
           path: dist
           merge-multiple: true

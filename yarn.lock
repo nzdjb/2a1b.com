@@ -16,13 +16,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@nzdjb/2a1b.com@workspace:."
   dependencies:
-    "@nzdjb/static-site-generator": "npm:^0.13.35"
+    "@nzdjb/static-site-generator": "npm:^0.13.36"
   languageName: unknown
   linkType: soft
 
-"@nzdjb/static-site-generator@npm:^0.13.35":
-  version: 0.13.35
-  resolution: "@nzdjb/static-site-generator@npm:0.13.35"
+"@nzdjb/static-site-generator@npm:^0.13.36":
+  version: 0.13.36
+  resolution: "@nzdjb/static-site-generator@npm:0.13.36"
   dependencies:
     "@iarna/toml": "npm:^2.2.5"
     es-main: "npm:^1.3.0"
@@ -34,7 +34,7 @@ __metadata:
     ts-command-line-args: "npm:^2.4.2"
   bin:
     static-site-generator: dist/src/index.js
-  checksum: 10c0/bedf1145e94ee6db077162eef1c50bd5a714653ebee6bfe3d2bcbe24f6d1cbc5d43d2683f4280a8fa0e46e8f48967798b7d2ae3893f00483e82ed7ec045457a0
+  checksum: 10c0/4cf239dc82bc23090e026b5783efdc615df29fad77fe8b99f2695808fcc81e76f5f663eb1748926dca8bfc55b384e6c7cda5f3a39a7e55efa99c773478abb2ef
   languageName: node
   linkType: hard
 

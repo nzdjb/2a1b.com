@@ -7,7 +7,7 @@
   "license": "UNLICENSED",
   "private": true,
   "devDependencies": {
-    "@nzdjb/static-site-generator": "^0.13.42"
+    "@nzdjb/static-site-generator": "^0.13.43"
   },
   "packageManager": "yarn@4.10.3"
 }
